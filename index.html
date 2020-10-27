@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid19 Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>COVID-19 TRACKER</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="recent-report">
+                <div class="country">
+                    <div class="name"><h1>INDIA</h1></div>
+                    <div class="change-country">change</div>
+                    <div class="search-country hide">
+                        <div class="search-box">
+                            <input type="text" id="search-input" placeholder="Enter Country Name">
+                            <img class="close" src="./images/closeicon.png" alt="close icon">
+                        </div>
+                        <div class="country-list" >
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="total-cases">
+                    <div class="title">TOTAL CASES</div>
+                    <div class="total-value">0000</div>
+                    <div class="new-value">+000</div>
+                </div>
+                <div class="recovered-cases">
+                    <div class="title">TOTAL RECOVERED</div>
+                    <div class="total-value">0000</div>
+                    <div class="new-value">+000</div>
+                </div>
+                <div class="deaths">
+                    <div class="title">TOTAL DEATHS</div>
+                    <div class="total-value">0000</div>
+                    <div class="new-value">+000</div>
+                </div>
+            </div>
+            <div class="chart">
+                <canvas id="axes_line_chart"></canvas>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="credits">
+                <h1>&copy HARI KRISHNA</h1>
+            </div>
+        </div>
+    </footer>
+
+    <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+    <script src="countries.js"></script>
+    <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" 
+    integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" 
+    crossorigin="anonymous"> </script>
+</body>
+</html>
